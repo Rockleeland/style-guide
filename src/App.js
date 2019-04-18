@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Fragment } from "react";
 import styled, { createGlobalStyle } from "styled-components";
 
 import { colors, sizes } from "./variables";
@@ -83,35 +83,36 @@ const StyleguideSubheading = styled.h2`
   }
 `;
 
-class App extends Component {
-  render() {
-    return (
-      <Fragment>
-        <AppContainer>
-          <StyleguideHeading>Style guide</StyleguideHeading>
+const App = () => {
+  return (
+    <Fragment>
+      <AppContainer>
+        <StyleguideHeading>Style guide</StyleguideHeading>
 
-          <p>This is a style guide that uses Material UI to make resuable view components</p>
+        <p>
+          This is a style guide that uses Material UI to make resuable view
+          components
+        </p>
 
-          <StyleguideSubheading>Colors</StyleguideSubheading>
+        <StyleguideSubheading>Colors</StyleguideSubheading>
 
-          <Colors colors={colors} />
+        <Colors colors={colors} />
 
-          <StyleguideSubheading>Typography</StyleguideSubheading>
+        <StyleguideSubheading>Typography</StyleguideSubheading>
 
-          <Typography colors={colors} scale={sizes} />
+        <Typography colors={colors} scale={sizes} />
 
-          <StyleguideSubheading>Buttons</StyleguideSubheading>
+        <StyleguideSubheading>Buttons</StyleguideSubheading>
 
-          <Buttons colors={colors} />
+        <Buttons colors={colors} />
 
-          <StyleguideSubheading>Forms</StyleguideSubheading>
+        <StyleguideSubheading>Forms</StyleguideSubheading>
 
-          <Forms colors={colors} scale={sizes} />
-        </AppContainer>
-        <GlobalStyle />
-      </Fragment>
-    );
-  }
-}
+        <Forms colors={colors} scale={sizes} />
+      </AppContainer>
+      <GlobalStyle />
+    </Fragment>
+  );
+};
 
 export default App;
