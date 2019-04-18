@@ -56,7 +56,7 @@ const Buttons = () => {
           <Button 
             theme={colors.primary} 
             large icon>
-            <i class="fas fa-bullhorn" /> with icon
+            <i className="fas fa-bullhorn" /> with icon
           </Button>
         </ButtonVariant>
 
@@ -97,7 +97,7 @@ const Buttons = () => {
 
         <ButtonVariant>
           <Button theme={colors.secondary} large icon>
-            <i class="fas fa-bullhorn" /> with icon
+            <i className="fas fa-bullhorn" /> with icon
           </Button>
         </ButtonVariant>
 
@@ -138,7 +138,7 @@ const Buttons = () => {
 
         <ButtonVariant>
           <Button theme={colors.error} large icon>
-            <i class="fas fa-bullhorn" /> with icon
+            <i className="fas fa-bullhorn" /> with icon
           </Button>
         </ButtonVariant>
 
@@ -176,7 +176,7 @@ const Buttons = () => {
 
         <ButtonVariant>
           <Button theme={colors.success} large icon>
-            <i class="fas fa-bullhorn" /> with icon
+            <i className="fas fa-bullhorn" /> with icon
           </Button>
         </ButtonVariant>
 
@@ -215,7 +215,7 @@ const Buttons = () => {
 
         <ButtonVariant>
           <Button theme={colors.primaryHover} large hover icon>
-            <i class="fas fa-bullhorn" /> with icon
+            <i className="fas fa-bullhorn" /> with icon
           </Button>
         </ButtonVariant>
 
@@ -253,7 +253,7 @@ const Buttons = () => {
 
         <ButtonVariant>
           <Button theme={colors.secondaryHover} large icon>
-            <i class="fas fa-bullhorn" /> with icon
+            <i className="fas fa-bullhorn" /> with icon
           </Button>
         </ButtonVariant>
 
@@ -291,7 +291,7 @@ const Buttons = () => {
 
         <ButtonVariant>
           <Button theme={colors.errorHover} large icon>
-            <i class="fas fa-bullhorn" /> with icon
+            <i className="fas fa-bullhorn" /> with icon
           </Button>
         </ButtonVariant>
 
@@ -329,7 +329,7 @@ const Buttons = () => {
 
         <ButtonVariant>
           <Button theme={colors.successHover} large icon>
-            <i class="fas fa-bullhorn" /> with icon
+            <i className="fas fa-bullhorn" /> with icon
           </Button>
         </ButtonVariant>
 
@@ -368,7 +368,7 @@ const Buttons = () => {
 
         <ButtonVariant>
           <Button theme={colors.primary} large active icon>
-            <i class="fas fa-bullhorn" /> with icon
+            <i className="fas fa-bullhorn" /> with icon
           </Button>
         </ButtonVariant>
 
@@ -406,7 +406,7 @@ const Buttons = () => {
 
         <ButtonVariant>
           <Button theme={colors.secondaryActive} large icon>
-            <i class="fas fa-bullhorn" /> with icon
+            <i className="fas fa-bullhorn" /> with icon
           </Button>
         </ButtonVariant>
 
@@ -444,7 +444,7 @@ const Buttons = () => {
 
         <ButtonVariant>
           <Button theme={colors.errorActive} large icon>
-            <i class="fas fa-bullhorn" /> with icon
+            <i className="fas fa-bullhorn" /> with icon
           </Button>
         </ButtonVariant>
 
@@ -482,7 +482,7 @@ const Buttons = () => {
 
         <ButtonVariant>
           <Button theme={colors.successActive} large icon>
-            <i class="fas fa-bullhorn" /> with icon
+            <i className="fas fa-bullhorn" /> with icon
           </Button>
         </ButtonVariant>
 
@@ -521,7 +521,7 @@ const Buttons = () => {
 
         <ButtonVariant>
           <Button theme={colors.primary} large disabled icon>
-            <i class="fas fa-bullhorn" /> with icon
+            <i className="fas fa-bullhorn" /> with icon
           </Button>
         </ButtonVariant>
 

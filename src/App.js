@@ -31,6 +31,7 @@ const App = () => {
         <ol>
           <li>Use the styled() method to style your Material UI components</li>
           <li>Prioritize the CSS rules of your styled-components over those of the JSS with &&</li>
+          <li>Dynamically style your components while avoiding warnings related to DOM attributes</li>
         </ol>
 
         <StyleguideSubheading>Colors</StyleguideSubheading>

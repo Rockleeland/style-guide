@@ -1,17 +1,26 @@
 // Import dependencies
+import React from 'react';
 import styled, { css } from 'styled-components'
 
 // Import colors and sizes variables
 import { colors, sizes } from '../../variables'
-
-
 // import PropTypes from 'prop-types';
 // import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
-export default styled(Button)`
+export default styled(({ 
+    active, 
+    hover, 
+    large, 
+    disabled, 
+    fab, 
+    medium, 
+    small, 
+    ghost, 
+    icon, 
+    ...otherProps }) => <Button {...otherProps} />)`
 && {
-    display: inline-block;
+display: inline-block;
   width: ${props => (props.fab ? '32px' : 'initial')};
   font-size: ${sizes.sm};
   color: ${props => (props.ghost ? props.theme : '#fff')};
