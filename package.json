@@ -2,6 +2,12 @@
   "name": "style-guide",
   "version": "0.1.0",
   "private": true,
+  "keywords": [
+    "design",
+    "react",
+    "styled-components",
+    "style guide"
+  ],
   "dependencies": {
     "@material-ui/core": "^3.9.3",
     "react": "^16.8.6",
