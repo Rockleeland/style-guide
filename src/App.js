@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import styled, { createGlobalStyle } from 'styled-components'
+import React, { Component, Fragment } from "react";
+import styled, { createGlobalStyle } from "styled-components";
 
-import { colors, sizes } from './variables'
+import { colors, sizes } from "./variables";
 
 // Import style guide components
-// import Buttons from './components/buttons'
-// import Colors from './components/colors'
-// import Forms from './components/forms'
-// import Typography from './components/typography'
+import Buttons from "./components/buttons";
+import Colors from "./components/colors";
+import Forms from "./components/forms";
+import Typography from "./components/typography";
 
 // // Global styles and resets
 const GlobalStyle = createGlobalStyle`
@@ -28,7 +28,7 @@ const GlobalStyle = createGlobalStyle`
     font: 100% / 1.618 Roboto, Arial, sans-serif;
     color: ${colors.text};
   }
-`
+`;
 
 // Main container or wrapper
 const AppContainer = styled.div`
@@ -39,7 +39,7 @@ const AppContainer = styled.div`
   flex-flow: column wrap;
   align-items: flex-start;
   max-width: 992px;
-`
+`;
 
 // H1 heading
 const StyleguideHeading = styled.h1`
@@ -52,12 +52,12 @@ const StyleguideHeading = styled.h1`
     position: absolute;
     bottom: 0;
     left: 0;
-    content: '';
+    content: "";
     width: 100%;
     height: 2px;
     background-color: ${colors.text};
   }
-`
+`;
 
 // H2 heading
 const StyleguideSubheading = styled.h2`
@@ -72,7 +72,7 @@ const StyleguideSubheading = styled.h2`
     position: absolute;
     bottom: 0;
     left: 0;
-    content: '';
+    content: "";
     width: 100%;
     height: 1.5px;
     background-color: ${colors.text};
@@ -81,37 +81,35 @@ const StyleguideSubheading = styled.h2`
   div + & {
     margin-top: 60px;
   }
-`
+`;
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-      <AppContainer>
-        <StyleguideHeading>UI Style guide</StyleguideHeading>
+      <Fragment>
+        <AppContainer>
+          <StyleguideHeading>Style guide</StyleguideHeading>
 
-        <p>
-          A short info about the company. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-        </p>
+          <p>This is a style guide that uses Material UI to make resuable view components</p>
 
-        <StyleguideSubheading>Colors</StyleguideSubheading>
+          <StyleguideSubheading>Colors</StyleguideSubheading>
 
-        {/*<Colors colors={colors} />*/}
+          <Colors colors={colors} />
 
-        <StyleguideSubheading>Typography</StyleguideSubheading>
+          <StyleguideSubheading>Typography</StyleguideSubheading>
 
-        {/*<Typography colors={colors} scale={typography} />*/}
+          <Typography colors={colors} scale={sizes} />
 
-        <StyleguideSubheading>Buttons</StyleguideSubheading>
+          <StyleguideSubheading>Buttons</StyleguideSubheading>
 
-        {/*<Buttons colors={colors} />*/}
+          <Buttons colors={colors} />
 
-        <StyleguideSubheading>Forms</StyleguideSubheading>
+          <StyleguideSubheading>Forms</StyleguideSubheading>
 
-        {/*<Forms colors={colors} scale={typography} />*/}
-      </AppContainer>
-      <GlobalStyle/>
-      </div>
+          <Forms colors={colors} scale={sizes} />
+        </AppContainer>
+        <GlobalStyle />
+      </Fragment>
     );
   }
 }
