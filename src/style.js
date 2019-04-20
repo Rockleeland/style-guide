@@ -91,3 +91,7 @@ export const CodeSnippet = styled.p`
     display: block;
     word-wrap: break-word;
 `;
+
+export const StyledIcon = styled.img`
+  width: 6vw;
+`;
