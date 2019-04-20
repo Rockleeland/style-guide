@@ -18,7 +18,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     font: 100% / 1.618 Roboto, Arial, sans-serif;
-    color: ${colors.text};
+    color: ${colors.guideText};
   }
 `;
 
@@ -29,8 +29,9 @@ export const AppContainer = styled.div`
   margin-right: auto;
   display: flex;
   flex-flow: column wrap;
-  align-items: flex-start;
+  align-items: center;
   max-width: 992px;
+  color: ‎${colors.guideText};
 `;
 
 // H1 heading
@@ -38,6 +39,7 @@ export const StyleguideHeading = styled.h1`
   position: relative;
   display: inline-block;
   font-weight: 500;
+  color: black;
 
   // Customizable underline
   &::before {

@@ -13,7 +13,8 @@ export const colors = {
     success: 'hsl(164, 75.6%, 46.7%)',
     successActive: 'hsl(164, 75.6%, 26.7%)',
     successHover: 'hsl(164, 75.6%, 60%)',
-    text: 'hsl(223.8, 81.3%, 6.3%)'
+    text: 'hsl(223.8, 81.3%, 6.3%)',
+    guideText: 'hsl(0, 0%, 33%)'
   }
   
   // Sizes for typography scale
