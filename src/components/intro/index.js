@@ -11,7 +11,11 @@ const Intro = () => {
         This is a style guide that integrates Material UI and Styled Components
         to make resuable view components.
       </p>
-      <a href="https://material-ui.com/">
+      <a
+        href="https://material-ui.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <StyledIcon alt="github logo" src={MaterialIcon} />
       </a>
       <p>
@@ -19,7 +23,11 @@ const Intro = () => {
         Material Design. It is the most popular component library with over 46k
         stars on Github.
       </p>
-      <a href="https://www.styled-components.com/">
+      <a
+        href="https://www.styled-components.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <StyledIcon alt="github logo" src={StyledComponentsIcon} />
       </a>
       <p>

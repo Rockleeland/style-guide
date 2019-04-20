@@ -4,7 +4,6 @@ import GithubIcon from "./images/GitHub_Logo.png";
 import Step from "./components/steps/";
 import Intro from "./components/intro/";
 
-
 //import global theme
 import {
   GlobalStyle,
@@ -25,9 +24,15 @@ const App = () => {
   return (
     <Fragment>
       <AppContainer>
-        <StyleguideHeading>Material UI/Styled Components Style Guide</StyleguideHeading>
+        <StyleguideHeading>
+          Material UI/Styled Components Style Guide
+        </StyleguideHeading>
         by: Leeland Clenista
-        <a href="https://github.com/Rockleeland/style-guide">
+        <a
+          href="https://github.com/Rockleeland/style-guide"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <StyledIcon alt="github logo" src={GithubIcon} />
         </a>
         <Intro />
